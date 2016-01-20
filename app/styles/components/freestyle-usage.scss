@@ -1,4 +1,12 @@
+$freestyleUsageBorderColor: #cecece;
+
 .FreestyleUsage {
+  border: map-get-deep($freestyle, 'usage', 'border');
+  border-radius: map-get-deep($freestyle, 'usage', 'border-radius');
+  padding: 10px;
+  margin: 10px;
+  background-color: map-get-deep($freestyle, 'usage', 'background-color');
+
   &-codeSnippet {
     max-width: 800px;
     padding: 10px;

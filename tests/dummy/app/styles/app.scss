@@ -5,9 +5,6 @@ html {
   box-sizing: inherit;
 }
 
-@import 'palette.json';
-@import 'ember-freestyle';
-
 @function map-get-deep($map, $keys...) {
   @if length($keys) == 1 {
     $keys: nth($keys, 1);
@@ -34,6 +31,11 @@ html {
 
   @return $get;
 }
+
+@import 'palette.json';
+@import 'freestyle.json';
+@import 'ember-freestyle';
+
 
 @function palette-color(
   $name: 'primary',
