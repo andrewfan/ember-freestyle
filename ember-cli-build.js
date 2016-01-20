@@ -11,7 +11,7 @@ module.exports = function(defaults) {
         'freestyle'
       ]
     },
-    snippetSearchPaths: ['tests/dummy/app', 'addon']
+    snippetSearchPaths: ['tests/dummy/app', 'app/styles']
   });
 
   /*

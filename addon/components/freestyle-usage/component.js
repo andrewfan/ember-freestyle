@@ -6,8 +6,14 @@ const { computed } = Ember;
 export default Ember.Component.extend({
   layout: layout,
   emberCli: Ember.inject.service(),
-  snippetKey: computed('snippetName', function() {
+  snippetHbs: computed('snippetName', function() {
     return `${this.get('snippetName')}.hbs`;
+  }),
+  snippetJs: computed('snippetName', function() {
+    return `${this.get('snippetName')}.js`;
+  }),
+  snippetScss: computed('snippetName', function() {
+    return `${this.get('snippetName')}.scss`;
   }),
   positionalParams: ['snippetName'],
   highlightJsTheme: 'zenburn'

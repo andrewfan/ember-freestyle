@@ -34,8 +34,10 @@ export default Ember.Component.extend({
     );
   }),
 
-  didInsertElement: function(){
-    Highlight.highlightBlock(this.get('element'));
+  didInsertElement: function() {
+    if (this.get('source')) {
+      Highlight.highlightBlock(this.get('element'));
+    }
   },
 
   language: Ember.computed('name', function(){
