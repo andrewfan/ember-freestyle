@@ -14,6 +14,9 @@ function initialize() {
       return;
     }
 
+    // broccoli-json-module creates a module for each json config file
+    // in the freestyle directory. Here we inject each module's
+    // exported config as a property on the ember-freestyle service.
     let module = require(moduleName, null, null, true);
     let freestyleModule = module['default'];
     let moduleKey = moduleName.split('/').reverse()[0];

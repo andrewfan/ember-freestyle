@@ -3,6 +3,6 @@ import layout from './template';
 
 export default Ember.Component.extend({
   classNames: ['x-foo'],
-  layout: layout,
+  layout,
   status: 'default'
 });

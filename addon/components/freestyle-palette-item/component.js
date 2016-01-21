@@ -5,7 +5,7 @@ const { computed } = Ember;
 const { htmlSafe } = Ember.String;
 
 export default Ember.Component.extend({
-  layout: layout,
+  layout,
   tagName: '',
   // color - passed in
   paletteStyle: computed('color', function() {

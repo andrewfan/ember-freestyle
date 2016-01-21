@@ -2,7 +2,7 @@ import Ember from 'ember';
 import layout from './template';
 
 export default Ember.Component.extend({
-  layout: layout,
+  layout,
 
   h1: 'Ember Freestyle Header 1',
   h2: 'Ember Freestyle Header 2',

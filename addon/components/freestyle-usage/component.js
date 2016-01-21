@@ -4,7 +4,7 @@ import layout from './template';
 const { computed } = Ember;
 
 export default Ember.Component.extend({
-  layout: layout,
+  layout,
   classNames: ['FreestyleUsage'],
   emberCli: Ember.inject.service(),
   snippetHbs: computed('snippetName', function() {
