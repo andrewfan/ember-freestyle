@@ -1,15 +1,38 @@
 $freestyleUsageBorderColor: #cecece;
+$freestyleUsageMaxWidth: 900px;
 
 .FreestyleUsage {
   border: map-get-deep($freestyle, 'usage', 'border');
   border-radius: map-get-deep($freestyle, 'usage', 'border-radius');
-  padding: 10px;
   margin: 10px;
   background-color: map-get-deep($freestyle, 'usage', 'background-color');
+  max-width: $freestyleUsageMaxWidth;
+
+  &-title {
+    text-transform: uppercase;
+    background-color: #cecece;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  &-subtitle {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  &-rendered {
+    padding: 10px;
+  }
+
+  &-usage {
+    padding: 10px;
+  }
 
   &-codeSnippet {
-    max-width: 800px;
-    padding: 10px;
+    pre {
+      border-radius: 2px;
+    }
 
     &--tomorrow-night {
       @import '../ember-freestyle/highlight.js/tomorrow-night';

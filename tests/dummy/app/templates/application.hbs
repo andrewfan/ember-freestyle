@@ -1,10 +1,13 @@
 {{outlet}}
-{{#freestyle-usage 'foo' highlightJsTheme='hybrid'}}
+{{#freestyle-usage 'foo'
+    title='Foo'
+    highlightJsTheme='hybrid'
+}}
   {{x-foo}}
 {{/freestyle-usage}}
-{{#freestyle-usage 'fp'}}
+{{#freestyle-usage 'fp' title='Freestyle Palette'}}
   {{freestyle-palette}}
 {{/freestyle-usage}}
-{{#freestyle-usage 'fpi'}}
+{{#freestyle-usage 'fpi' title="Freestyle Palette Item"}}
   {{freestyle-palette-item color=color}}
 {{/freestyle-usage}}

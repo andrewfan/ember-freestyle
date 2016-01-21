@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -35,7 +36,6 @@ html {
 @import 'palette.json';
 @import 'freestyle.json';
 @import 'ember-freestyle';
-
 
 @function palette-color(
   $name: 'primary',
@@ -75,10 +75,7 @@ html {
 body {
   font-family: sans-serif;
   margin: 0;
-  @debug map-get-deep($ColorPalette-colors, 'primary', 'name');
-  background-color: palette-color('primary', 'light');
 }
-
 
 .menu {
   display: block;
