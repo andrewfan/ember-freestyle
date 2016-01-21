@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -59,27 +64,4 @@ html {
   @return $color;
 }
 
-.x-foo {
-  background-color: #58504A;
-  border: solid 5px #89DAFF;
-  color: #DBB1BC;
-  margin: 20px 0;
-  padding: 20px;
-  width: 200px;
-}
-
-.x-foo h1 {
-  color: white;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 0;
-}
-
-.menu {
-  display: block;
-}
-.menu.active {
-  display: none;
-}
+@import 'components/x-foo';

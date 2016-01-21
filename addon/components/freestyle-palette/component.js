@@ -6,9 +6,8 @@ const { computed, inject } = Ember;
 export default Ember.Component.extend({
   tagName: '',
   layout,
-  title: 'Palette',
+  title: 'Freestyle Palette',
   freestyle: inject.service('ember-freestyle'),
-  description: computed.alias('freestyle.miscellany.human.name'),
   colorPalette: computed.alias('freestyle.palette.ColorPalette-colors'),
   colors: computed('colorPalette', function() {
     return Ember.A(

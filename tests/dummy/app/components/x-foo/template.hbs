@@ -1,3 +1,13 @@
-<h1>Foo</h1>
-<p>This is a component in the dummy app</p>
-<p>status: {{status}}</p>
+<div class="x-Foo">
+  <div class="x-Foo-title">Foo</div>
+  <p>This is a component in the dummy app</p>
+  {{#if special}}
+    <div class="x-Foo-description x-Foo-description--special">
+      Status: special
+    </div>
+  {{else}}
+    <div class="x-Foo-description x-Foo-description--normal">
+      Status: decidedly not special
+    </div>
+  {{/if}}
+</div>

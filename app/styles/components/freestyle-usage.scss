@@ -17,8 +17,9 @@ $freestyleUsageMaxWidth: 900px;
   }
 
   &-subtitle {
+    font-size: .8rem;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   &-rendered {
@@ -31,6 +32,7 @@ $freestyleUsageMaxWidth: 900px;
 
   &-codeSnippet {
     pre {
+      margin-top: 0;
       border-radius: 2px;
     }
 

@@ -1,8 +1,9 @@
 import Ember from 'ember';
 import layout from './template';
 
+const { computed } = Ember;
+
 export default Ember.Component.extend({
-  classNames: ['x-foo'],
   layout,
-  status: 'default'
+  special: computed.equal('status', 'special')
 });

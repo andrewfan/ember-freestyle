@@ -1,29 +1,29 @@
 // {{#freestyle-usage 'fpi'}}
 $freestylePaletteItemBorderColor: #cecece;
 
-.freestyle-palette-item {
+.FreestylePaletteItem {
   display: inline-block;
   border: solid 1px $freestylePaletteItemBorderColor;
-  margin: 5px;
+  margin: 0 5px 5px 0;
 
-  .freestyle-palette-item-color {
+  &-color {
     height: 90px;
     width: 160px;
   }
 
-  .freestyle-palette-item-info {
+  &-info {
     border-top: solid 1px $freestylePaletteItemBorderColor;
     padding: 5px;
     background-color: #fff;
   }
 
-  .freestyle-palette-item-hex {
+  &-hex {
     font-weight: bold;
     font-size: 12px;
     margin-bottom: 0;
   }
 
-  .freestyle-palette-item-name {
+  &-name {
     font-size: 11px;
     margin-top: 0;
     color: gray;
