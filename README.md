@@ -17,6 +17,7 @@ Ember Freestyle is an Ember addon that allows you to quickly create a living sty
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
