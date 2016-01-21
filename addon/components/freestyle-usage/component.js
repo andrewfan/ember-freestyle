@@ -3,7 +3,7 @@ import layout from './template';
 
 const { computed } = Ember;
 
-export default Ember.Component.extend({
+let FreestyleUsage = Ember.Component.extend({
   layout,
   classNames: ['FreestyleUsage'],
   emberCli: Ember.inject.service(),
@@ -16,6 +16,11 @@ export default Ember.Component.extend({
   snippetScss: computed('snippetName', function() {
     return `${this.get('snippetName')}.scss`;
   }),
-  positionalParams: ['snippetName'],
   highlightJsTheme: 'zenburn'
 });
+
+FreestyleUsage.reopenClass({
+  positionalParams: ['snippetName']
+});
+
+export default FreestyleUsage;
