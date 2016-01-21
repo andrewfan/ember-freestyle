@@ -1,12 +1,14 @@
-# Ember Freestyle
+# [WIP] Ember Freestyle [![Build Status](https://travis-ci.org/chrislopresto/ember-freestyle.svg?branch=master)](https://travis-ci.org/chrislopresto/ember-freestyle)
 
 Ember Freestyle is an Ember addon that allows you to quickly create a living styleguide for your Ember app.
 
+*This is a work in progress.*
+
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-freestyle`
+
+*Note:* Ember CLI versions < 0.2.3 should use `ember install:addon` instead of `ember install`
 
 ## Running
 

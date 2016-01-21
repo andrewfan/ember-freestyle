@@ -1,26 +1,18 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-
 moduleForComponent('freestyle-palette-item', 'Integration | Component | freestyle palette item', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  assert.expect(2);
+test('it has a base background color', function(assert) {
+  assert.expect(1);
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  this.set('color', {
+    base: '#abcdef'
+  });
 
-  this.render(hbs`{{freestyle-palette-item}}`);
-
-  assert.equal(this.$().text(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#freestyle-palette-item color='#abcdef'}}
-    {{/freestyle-palette-item}}
-  `);
+  this.render(hbs`{{freestyle-palette-item color=color}}`);
 
   const backgroundColorStyle = `style="background-color: #abcdef;"`;
   assert.ok(this.$().html().indexOf(backgroundColorStyle) > -1);
