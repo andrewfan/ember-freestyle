@@ -1,1 +1,0 @@
-export { default } from 'ember-freestyle/components/color-palette/component';
